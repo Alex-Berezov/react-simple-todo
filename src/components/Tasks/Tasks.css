@@ -1,0 +1,83 @@
+.todo__tasks {
+  width: 69%;
+  background: #ffffff;
+  padding: 55px;
+}
+.todo__tasks_header {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+.todo__tasks_header:hover img {
+  opacity: 1;
+}
+.todo__tasks_header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #64C4ED;
+}
+.todo__tasks_header img {
+  margin-left: 15px;
+  cursor: pointer;
+  opacity: 0;
+}
+.todo__tasks hr {
+  background: #F2F2F2;
+  width: 100%;
+}
+.todo__tasks_items {
+  margin-top: 30px;
+}
+.todo__tasks_items .tasks__items_row {
+  display: flex;
+  align-items: center;
+}
+.todo__tasks_items .tasks__items_row .checkbox input:checked + label {
+  background: #4DD599;
+  border-color: #4DD599;
+}
+.todo__tasks_items .tasks__items_row .checkbox input:checked + label svg {
+  opacity: 1;
+}
+.todo__tasks_items .tasks__items_row .checkbox input:checked + label svg path {
+  stroke: #ffffff;
+}
+.todo__tasks_items .tasks__items_row .checkbox:hover label {
+  background: #F2F2F2;
+  border-color: #F2F2F2;
+}
+.todo__tasks_items .tasks__items_row .checkbox:hover label svg {
+  opacity: 1;
+}
+.todo__tasks_items .tasks__items_row .checkbox:hover label svg path {
+  stroke: #B2B2B2;
+}
+.todo__tasks_items .tasks__items_row .checkbox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E8E8E8;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.todo__tasks_items .tasks__items_row .checkbox label svg {
+  opacity: 0;
+}
+.todo__tasks_items .tasks__items_row .checkbox input {
+  display: none;
+}
+.todo__tasks_items .tasks__items_row .text {
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*# sourceMappingURL=Tasks.css.map */

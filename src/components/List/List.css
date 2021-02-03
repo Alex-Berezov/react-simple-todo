@@ -1,0 +1,37 @@
+.todo__sidebar-list {
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.todo__sidebar-list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  margin-bottom: 5px;
+}
+.todo__sidebar-list li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.todo__sidebar-list li:hover .list__remove_icon {
+  opacity: 1;
+}
+.todo__sidebar-list li.active {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.todo__sidebar-list li i {
+  display: inline-flex;
+}
+.todo__sidebar-list li i svg path {
+  fill: #7C7C7C;
+}
+.todo__sidebar-list li span {
+  margin-left: 10px;
+}
+.todo__sidebar-list li .list__remove_icon {
+  margin-left: auto;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=List.css.map */

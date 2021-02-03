@@ -1,6 +1,7 @@
 @import '~normalize.css';
+
 * {
-  font-family: "Roboto", -apple-system, system-ui, sans-serif;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,12 +18,13 @@ li {
   justify-content: space-between;
   border: 1px solid #F1F1F1;
   font-size: 14px;
-}
-.todo__sidebar {
-  width: 29%;
-  background: #F4F6F8;
-  border-right: 1px solid #F1F1F1;
-  padding: 60px 20px;
+
+  &__sidebar {
+    width: 29%;
+    background: #F4F6F8;
+    border-right: 1px solid #F1F1F1;
+    padding: 60px 20px;
+  }
 }
 
 .field {
@@ -33,9 +35,8 @@ li {
   border-radius: 4px;
   outline: none;
   padding: 10px 7px;
-}
-.field:focus {
-  border-color: #cac9c9;
-}
 
-/*# sourceMappingURL=index.css.map */
+  &:focus {
+    border-color: #cac9c9;
+  }
+}

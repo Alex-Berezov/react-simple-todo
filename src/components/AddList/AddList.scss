@@ -1,0 +1,66 @@
+.list__add-button {
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.add__list {
+  &_popup {
+    width: auto;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    top: -20px;
+    right: -10px;
+
+    &_close-btn {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      cursor: pointer;
+    }
+
+    &-colors {
+      width: 100%;
+      height: 25px;
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .badge {
+      width: 16px;
+      height: 16px;
+      border: 2px solid transparent;
+
+      &.active {
+        border: 2px solid #525252;
+      }
+    }
+
+    .button {
+      width: 100%;
+      padding: 10px;
+      color: #ffffff;
+      background: #4DD599;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-top: 15px;
+
+      &:hover {
+        background: darken(#4DD599, 10%);
+      }
+      &:active {
+        background: darken(#4DD599, 15%);
+      }
+    }
+  }
+}
