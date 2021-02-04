@@ -34,6 +34,7 @@
 .todo__tasks_items .tasks__items_row {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 .todo__tasks_items .tasks__items_row .checkbox input:checked + label {
   background: #4DD599;
@@ -78,6 +79,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  border: none;
+  width: 100%;
 }
 
 /*# sourceMappingURL=Tasks.css.map */

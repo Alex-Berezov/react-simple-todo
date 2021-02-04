@@ -11,7 +11,7 @@ li {
 
 .todo {
   width: 60%;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   margin: 50px auto;
   justify-content: space-between;
