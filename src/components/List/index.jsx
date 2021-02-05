@@ -6,7 +6,7 @@ import './List.scss'
 import {Badge} from "../../components";
 import removeSvg from "../../assets/img/remove.svg"
 
-const List = ({items, isRemovable, onClick, onRemove}) => {
+const List = ({items, isRemovable, onClick, onRemove, onClickItem, activeItem}) => {
 
     const removeList = (item) => {
         if (window.confirm('Вы действительно хотите удалить список?')) {
@@ -17,15 +17,18 @@ const List = ({items, isRemovable, onClick, onRemove}) => {
     }
 
     return (
-        <ul className="todo__sidebar-list">
+        <ul onClick={onClick} className="todo__sidebar-list">
             {
                 items.map((item, index) => <li
-                    className={classNames(item.className, item.active ? 'active' : '')}
-                    onClick={onClick}
+                    className={classNames(item.className, {active: activeItem && activeItem.id === item.id})}
                     key={item + index}
+                    onClick={onClickItem ? () => onClickItem(item) : null}
                 >
-                    <i>{item.icons ? item.icons : <Badge color={item.color.name} />}</i>
-                    <span>{item.name}</span>
+                    <i>{item.icons ? item.icons : <Badge color={item.color.name}/>}</i>
+                    <span>
+                        {item.name}
+                        {item.tasks && ` (${item.tasks.length})`}
+                    </span>
                     {isRemovable &&
                     <img
                         onClick={() => removeList(item)}

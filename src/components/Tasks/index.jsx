@@ -1,18 +1,34 @@
 import React from 'react';
+import axios from "axios";
 
 import './Tasks.scss'
 import editSvg from "../../assets/img/edit.svg";
+import AddTaskLists from "./AddTaskLists";
 
-function Tasks({list}) {
+function Tasks({list, onEditTitle}) {
+
+    const editTitle = () => {
+        const newTitle = window.prompt('Введите новое название', list.name)
+        if (newTitle) {
+            onEditTitle(list.id, newTitle)
+            axios.patch('http://localhost:3001/lists/' + list.id, {
+                name: newTitle
+            }).catch(() => {
+                alert('Не удалось обновить название')
+            })
+        }
+    }
+
     return (
         <div className="todo__tasks">
             <div className="todo__tasks_header">
                 <h2>{list.name}</h2>
-                <img onClick={() => alert('Edit header')} src={editSvg} alt="Edit header"/>
+                <img onClick={editTitle} src={editSvg} alt="Edit header"/>
             </div>
             <hr/>
 
             <div className="todo__tasks_items">
+                {!list.tasks.length && <h2>Задачи отсутствуют</h2>}
                 {list.tasks.map(task => (
                     <div key={task.id} className="tasks__items_row">
                         <div className="checkbox">
@@ -39,6 +55,7 @@ function Tasks({list}) {
                     </div>
                 ))}
             </div>
+            <AddTaskLists />
         </div>
     );
 }

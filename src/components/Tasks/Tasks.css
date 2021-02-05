@@ -31,6 +31,13 @@
 .todo__tasks_items {
   margin-top: 30px;
 }
+.todo__tasks_items h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  color: #C9D1D3;
+}
 .todo__tasks_items .tasks__items_row {
   display: flex;
   align-items: center;
@@ -81,6 +88,58 @@
   line-height: 19px;
   border: none;
   width: 100%;
+}
+.todo__tasks_form .form_close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.todo__tasks_form .form_close img {
+  width: 14px;
+  height: 14px;
+}
+.todo__tasks_form .form_close p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #B4B4B4;
+  margin-left: 10px;
+}
+.todo__tasks_form .form_open .form__buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.todo__tasks_form .form_open .form__buttons .send {
+  padding: 10px 15px;
+  background: #4DD599;
+  border-radius: 4px;
+  color: #ffffff;
+  border: #4DD599;
+  outline: none;
+  cursor: pointer;
+}
+.todo__tasks_form .form_open .form__buttons .send:hover {
+  background: #38d08d;
+}
+.todo__tasks_form .form_open .form__buttons .send:active {
+  background: #2ec180;
+}
+.todo__tasks_form .form_open .form__buttons .cancel {
+  padding: 10px 15px;
+  background: #F4F6F8;
+  border-radius: 4px;
+  color: #9C9C9C;
+  border: #F4F6F8;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.todo__tasks_form .form_open .form__buttons .cancel:hover {
+  background: #ebeef2;
+}
+.todo__tasks_form .form_open .form__buttons .cancel:active {
+  background: #e1e7ec;
 }
 
 /*# sourceMappingURL=Tasks.css.map */

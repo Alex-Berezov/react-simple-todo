@@ -38,6 +38,14 @@
   &_items {
     margin-top: 30px;
 
+    h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      text-align: center;
+      color: #C9D1D3;
+    }
+
     .tasks__items_row {
       display: flex;
       align-items: center;
@@ -51,6 +59,7 @@
 
           svg {
             opacity: 1;
+
             path {
               stroke: #ffffff;
             }
@@ -104,4 +113,71 @@
       }
     }
   }
+
+  &_form {
+
+    .form_close {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #B4B4B4;
+        margin-left: 10px;
+      }
+    }
+
+    .form_open {
+
+      .form__buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .send {
+          padding: 10px 15px;
+          background: #4DD599;
+          border-radius: 4px;
+          color: #ffffff;
+          border: #4DD599;
+          outline: none;
+          cursor: pointer;
+
+          &:hover {
+            background: darken(#4DD599, 5%);
+          }
+          &:active {
+            background: darken(#4DD599, 10%);
+          }
+        }
+
+        .cancel {
+          padding: 10px 15px;
+          background: #F4F6F8;
+          border-radius: 4px;
+          color: #9C9C9C;
+          border: #F4F6F8;
+          outline: none;
+          cursor: pointer;
+          margin-left: 10px;
+
+          &:hover {
+            background: darken(#F4F6F8, 3%);
+          }
+          &:active {
+            background: darken(#F4F6F8, 6%);
+          }
+        }
+      }
+    }
+  }
+
 }
