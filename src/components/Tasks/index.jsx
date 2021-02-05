@@ -5,7 +5,7 @@ import './Tasks.scss'
 import editSvg from "../../assets/img/edit.svg";
 import AddTaskLists from "./AddTaskLists";
 
-function Tasks({list, onEditTitle}) {
+function Tasks({ list, onEditTitle, onAddTask }) {
 
     const editTitle = () => {
         const newTitle = window.prompt('Введите новое название', list.name)
@@ -55,7 +55,7 @@ function Tasks({list, onEditTitle}) {
                     </div>
                 ))}
             </div>
-            <AddTaskLists />
+            <AddTaskLists list={list} onAddTask={onAddTask} />
         </div>
     );
 }

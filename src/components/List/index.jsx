@@ -20,7 +20,9 @@ const List = ({items, isRemovable, onClick, onRemove, onClickItem, activeItem}) 
         <ul onClick={onClick} className="todo__sidebar-list">
             {
                 items.map((item, index) => <li
-                    className={classNames(item.className, {active: activeItem && activeItem.id === item.id})}
+                    className={classNames(item.className, {
+                        active: item.active ? item.active : activeItem && activeItem.id === item.id})
+                    }
                     key={item + index}
                     onClick={onClickItem ? () => onClickItem(item) : null}
                 >
