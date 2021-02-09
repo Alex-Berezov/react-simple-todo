@@ -1,11 +1,13 @@
 import React from 'react';
 import axios from "axios";
+import { Link } from 'react-router-dom'
 
 import './Tasks.scss'
 import editSvg from "../../assets/img/edit.svg";
 import AddTaskLists from "./AddTaskLists";
+import Task from "./Task";
 
-function Tasks({ list, onEditTitle, onAddTask }) {
+function Tasks({ list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEditTask, onCompleteTask }) {
 
     const editTitle = () => {
         const newTitle = window.prompt('Введите новое название', list.name)
@@ -20,42 +22,29 @@ function Tasks({ list, onEditTitle, onAddTask }) {
     }
 
     return (
-        <div className="todo__tasks">
-            <div className="todo__tasks_header">
-                <h2>{list.name}</h2>
+        <div className="todo__tasks_task">
+            <div className="header">
+                <Link to={`/lists/${list.id}`}>
+                    <h2 style={{ color: list.color.hex }}>{list.name}</h2>
+                </Link>
                 <img onClick={editTitle} src={editSvg} alt="Edit header"/>
             </div>
             <hr/>
 
-            <div className="todo__tasks_items">
-                {!list.tasks.length && <h2>Задачи отсутствуют</h2>}
-                {list.tasks.map(task => (
-                    <div key={task.id} className="tasks__items_row">
-                        <div className="checkbox">
-                            <input id={`task-${task.id}`} type="checkbox"/>
-                            <label htmlFor={`task-${task.id}`}>
-                                <svg
-                                    width="11"
-                                    height="8"
-                                    viewBox="0 0 11 8"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M9.29999 1.20001L3.79999 6.70001L1.29999 4.20001"
-                                        stroke="#000"
-                                        strokeWidth="1.5"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
-                            </label>
-                        </div>
-                        <input className="text" readOnly value={task.text}/>
-                    </div>
+            <div className="items">
+                {!withoutEmpty && list.tasks && !list.tasks.length && <h2>Задачи отсутствуют</h2>}
+                {list.tasks && list.tasks.map(task => (
+                    <Task
+                        key={task.id}
+                        onRemove={onRemoveTask}
+                        onEdit={onEditTask}
+                        onComplete={onCompleteTask}
+                        list={list}
+                        {...task}
+                    />
                 ))}
             </div>
-            <AddTaskLists list={list} onAddTask={onAddTask} />
+            <AddTaskLists key={list.id} list={list} onAddTask={onAddTask}/>
         </div>
     );
 }

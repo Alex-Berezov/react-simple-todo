@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87a00432-36b4-41ae-a0f0-99a7b01cd238" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Tasks/Task.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddList/AddList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/AddList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddList/AddList.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/AddList.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddList/AddList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/AddList.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tasks/AddTaskLists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/AddTaskLists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tasks/Tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/Tasks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tasks/Tasks.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/Tasks.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tasks/Tasks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/Tasks.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tasks/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +95,19 @@
       <workItem from="1612254611191" duration="12956000" />
       <workItem from="1612336039139" duration="15467000" />
       <workItem from="1612423102250" duration="14770000" />
-      <workItem from="1612517060957" duration="5897000" />
+      <workItem from="1612517060957" duration="6776000" />
+      <workItem from="1612607871556" duration="11378000" />
+      <workItem from="1612771596167" duration="18538000" />
+      <workItem from="1612855051909" duration="598000" />
     </task>
+    <task id="LOCAL-00001" summary="Made adding tasks">
+      <created>1612534360803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612534360804</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Made adding tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made adding tasks" />
   </component>
 </project>

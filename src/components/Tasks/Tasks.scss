@@ -1,179 +1,206 @@
 .todo__tasks {
+  display: flex;
+  flex-direction: column;
   width: 69%;
   background: #ffffff;
   padding: 55px;
+  overflow: scroll;
 
-  &_header {
-    display: flex;
-    align-items: baseline;
-    cursor: pointer;
+  a {
+    text-decoration: none;
+  }
 
-    &:hover {
+  &_task {
+
+    .header {
+      display: flex;
+      align-items: baseline;
+      cursor: pointer;
+
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        color: #64C4ED;
+      }
+
       img {
-        opacity: 1;
+        margin-left: 15px;
+        cursor: pointer;
+        opacity: 0;
       }
     }
 
-    h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 39px;
-      color: #64C4ED;
+    hr {
+      background: #F2F2F2;
+      width: 100%;
     }
 
-    img {
-      margin-left: 15px;
-      cursor: pointer;
-      opacity: 0;
-    }
-  }
+    .items {
+      margin-top: 30px;
 
-  hr {
-    background: #F2F2F2;
-    width: 100%;
-  }
+      h2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        text-align: center;
+        color: #C9D1D3;
+      }
 
-  &_items {
-    margin-top: 30px;
+      .items_row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
 
-    h2 {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 26px;
-      text-align: center;
-      color: #C9D1D3;
-    }
+        .checkbox {
 
-    .tasks__items_row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-
-      .checkbox {
-
-        input:checked + label {
-          background: #4DD599;
-          border-color: #4DD599;
-
-          svg {
-            opacity: 1;
-
-            path {
-              stroke: #ffffff;
-            }
-          }
-        }
-
-        &:hover {
-          label {
-            background: #F2F2F2;
-            border-color: #F2F2F2;
+          input:checked + label {
+            background: #4DD599;
+            border-color: #4DD599;
 
             svg {
               opacity: 1;
 
               path {
-                stroke: #B2B2B2;
+                stroke: #ffffff;
               }
             }
           }
-        }
 
-        label {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 2px solid #E8E8E8;
-          border-radius: 50%;
-          width: 20px;
-          height: 20px;
-          cursor: pointer;
+          &:hover {
+            label {
+              background: #F2F2F2;
+              border-color: #F2F2F2;
 
-          svg {
-            opacity: 0;
+              svg {
+                opacity: 1;
+
+                path {
+                  stroke: #B2B2B2;
+                }
+              }
+            }
+          }
+
+          label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #E8E8E8;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            svg {
+              opacity: 0;
+            }
+          }
+
+          input {
+            display: none;
           }
         }
 
-        input {
-          display: none;
+        .text {
+          margin-left: 15px;
+          font-family: 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          border: none;
+          width: 100%;
+        }
+
+        .actions {
+          display: flex;
+          opacity: 0;
+          transition: opacity 0.15s ease-in-out;
+
+          .delete {
+            margin-left: 20px;
+          }
+        }
+
+        &:hover {
+          .actions {
+            opacity: 1;
+          }
         }
       }
-
-      .text {
-        margin-left: 15px;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        border: none;
-        width: 100%;
-      }
-    }
-  }
-
-  &_form {
-
-    .form_close {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-
-      img {
-        width: 14px;
-        height: 14px;
-      }
-
-      p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        color: #B4B4B4;
-        margin-left: 10px;
-      }
     }
 
-    .form_open {
+    .form {
 
-      .form__buttons {
+      .form_close {
         display: flex;
         align-items: center;
-        margin-top: 20px;
+        cursor: pointer;
 
-        .send {
-          padding: 10px 15px;
-          background: #4DD599;
-          border-radius: 4px;
-          color: #ffffff;
-          border: #4DD599;
-          outline: none;
-          cursor: pointer;
-
-          &:hover {
-            background: darken(#4DD599, 5%);
-          }
-          &:active {
-            background: darken(#4DD599, 10%);
-          }
+        img {
+          width: 14px;
+          height: 14px;
         }
 
-        .cancel {
-          padding: 10px 15px;
-          background: #F4F6F8;
-          border-radius: 4px;
-          color: #9C9C9C;
-          border: #F4F6F8;
-          outline: none;
-          cursor: pointer;
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #B4B4B4;
           margin-left: 10px;
+        }
+      }
 
-          &:hover {
-            background: darken(#F4F6F8, 3%);
+      .form_open {
+
+        .form__buttons {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          .send {
+            padding: 10px 15px;
+            background: #4DD599;
+            border-radius: 4px;
+            color: #ffffff;
+            border: #4DD599;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+              background: darken(#4DD599, 5%);
+            }
+            &:active {
+              background: darken(#4DD599, 10%);
+            }
           }
-          &:active {
-            background: darken(#F4F6F8, 6%);
+
+          .cancel {
+            padding: 10px 15px;
+            background: #F4F6F8;
+            border-radius: 4px;
+            color: #9C9C9C;
+            border: #F4F6F8;
+            outline: none;
+            cursor: pointer;
+            margin-left: 10px;
+
+            &:hover {
+              background: darken(#F4F6F8, 3%);
+            }
+            &:active {
+              background: darken(#F4F6F8, 6%);
+            }
           }
         }
       }

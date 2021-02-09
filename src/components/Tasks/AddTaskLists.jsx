@@ -25,10 +25,11 @@ function AddTaskLists({list, onAddTask}) {
             "completed": false
         }
         setIsSending(true)
-        axios.post('http://localhost:3001/tasks', obj).then(({data}) => {
-            onAddTask(list.id, data)
-            toggleFormVisible()
-        }).catch(() => {
+        axios.post('http://localhost:3001/tasks', obj)
+            .then(({data}) => {
+                onAddTask(list.id, data)
+                toggleFormVisible()
+            }).catch(() => {
             alert('Ошибка при добавлении задачи')
         }).finally(() => {
             setIsSending(false)
@@ -36,7 +37,7 @@ function AddTaskLists({list, onAddTask}) {
     }
 
     return (
-        <div className="todo__tasks_form">
+        <div className="form">
             {!visibleForm
                 ? <div onClick={toggleFormVisible} className="form_close">
                     <img src={addSvg} alt="Add task"/>
