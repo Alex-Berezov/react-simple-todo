@@ -26,7 +26,7 @@
       "colorId": 1
     },
     {
-      "name": "test",
+      "name": "Test",
       "colorId": 6,
       "id": 6
     }
@@ -54,7 +54,7 @@
       "id": 4,
       "listId": 2,
       "text": "Redux (redux-observable, redux-saga)",
-      "completed": false
+      "completed": true
     },
     {
       "listId": 4,
@@ -75,8 +75,8 @@
       "id": 8
     },
     {
-      "listId": 6,
-      "text": "test",
+      "listId": 1,
+      "text": "Test2",
       "completed": false,
       "id": 9
     }

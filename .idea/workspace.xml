@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87a00432-36b4-41ae-a0f0-99a7b01cd238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Tasks/Task.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddList/AddList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/AddList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddList/AddList.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/AddList.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddList/AddList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/AddList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tasks/AddTaskLists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/AddTaskLists.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tasks/Tasks.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/Tasks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tasks/Tasks.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/Tasks.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tasks/Tasks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/Tasks.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tasks/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tasks/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\lessons\react_simple_todo\public" />
       <recent name="C:\xampp\htdocs\lessons\react_simple_todo\src\assets\img" />
       <recent name="C:\xampp\htdocs\lessons\react_simple_todo\src\components\List" />
     </key>
@@ -98,7 +88,8 @@
       <workItem from="1612517060957" duration="6776000" />
       <workItem from="1612607871556" duration="11378000" />
       <workItem from="1612771596167" duration="18538000" />
-      <workItem from="1612855051909" duration="598000" />
+      <workItem from="1612855051909" duration="1361000" />
+      <workItem from="1613556964250" duration="1524000" />
     </task>
     <task id="LOCAL-00001" summary="Made adding tasks">
       <created>1612534360803</created>
